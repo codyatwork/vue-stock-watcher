@@ -1,6 +1,16 @@
 # Stock Watcher
 Simple Vue 3 web application for a user to add basic stock tickers to a dashboard. Based on the [foreUP stock watcher spec](https://bitbucket.org/foreup/stock-watcher-spec/src/master/).
 
+[Try it here!](https://codyatwork.github.io/Stock-Watcher/)
+
+## The stocks are hard-coded. Here are the ones included:
+* GOOG
+* YHOO
+* AIG
+* UWTIF
+* DWTIF
+* GRPN
+
 ## Project setup
 ```
 yarn install
