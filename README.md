@@ -1,5 +1,5 @@
 # Stock Watcher
-Simple web application for a user to add basic stock tickers to a dashboard. Based on the [foreUP stock watcher spec](https://bitbucket.org/foreup/stock-watcher-spec/src/master/).
+Simple Vue 3 web application for a user to add basic stock tickers to a dashboard. Based on the [foreUP stock watcher spec](https://bitbucket.org/foreup/stock-watcher-spec/src/master/).
 
 ## Project setup
 ```
