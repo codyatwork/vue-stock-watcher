@@ -1060,9 +1060,9 @@
     lodash.kebabcase "^4.1.1"
     svg-tags "^1.0.0"
 
-"@vue/babel-preset-app@^4.5.12":
-  version "4.5.12"
-  resolved "https://registry.npmjs.org/@vue/babel-preset-app/-/babel-preset-app-4.5.12.tgz"
+"@vue/babel-preset-app@^4.5.13":
+  version "4.5.13"
+  resolved "https://registry.yarnpkg.com/@vue/babel-preset-app/-/babel-preset-app-4.5.13.tgz#cb475321e4c73f7f110dac29a48c2a9cb80afeb6"
   dependencies:
     "@babel/core" "^7.11.0"
     "@babel/helper-compilation-targets" "^7.9.6"
@@ -1141,13 +1141,13 @@
   version "4.5.12"
   resolved "https://registry.npmjs.org/@vue/cli-overlay/-/cli-overlay-4.5.12.tgz"
 
-"@vue/cli-plugin-babel@~4.5.0":
-  version "4.5.12"
-  resolved "https://registry.npmjs.org/@vue/cli-plugin-babel/-/cli-plugin-babel-4.5.12.tgz"
+"@vue/cli-plugin-babel@~4.5.13":
+  version "4.5.13"
+  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-babel/-/cli-plugin-babel-4.5.13.tgz#a89c482edcc4ea1d135645cec502a7f5fd4c30e7"
   dependencies:
     "@babel/core" "^7.11.0"
-    "@vue/babel-preset-app" "^4.5.12"
-    "@vue/cli-shared-utils" "^4.5.12"
+    "@vue/babel-preset-app" "^4.5.13"
+    "@vue/cli-shared-utils" "^4.5.13"
     babel-loader "^8.1.0"
     cache-loader "^4.1.0"
     thread-loader "^2.1.3"
