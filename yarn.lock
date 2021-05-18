@@ -38,9 +38,9 @@
     semver "^6.3.0"
     source-map "^0.5.0"
 
-"@babel/eslint-parser@^7.14.2":
-  version "7.14.2"
-  resolved "https://registry.yarnpkg.com/@babel/eslint-parser/-/eslint-parser-7.14.2.tgz#aa6fe7b76378397d643f14dfa8bf920cb6fbddab"
+"@babel/eslint-parser@^7.14.3":
+  version "7.14.3"
+  resolved "https://registry.yarnpkg.com/@babel/eslint-parser/-/eslint-parser-7.14.3.tgz#8f292caf83dd2d7b364f938fe7074806af6d70ea"
   dependencies:
     eslint-scope "^5.1.0"
     eslint-visitor-keys "^2.1.0"
