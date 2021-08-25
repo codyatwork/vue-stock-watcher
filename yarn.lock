@@ -1273,16 +1273,6 @@
     semver "^6.1.0"
     strip-ansi "^6.0.0"
 
-"@vue/compiler-core@3.2.5":
-  version "3.2.5"
-  resolved "https://registry.yarnpkg.com/@vue/compiler-core/-/compiler-core-3.2.5.tgz#82fd33f6e53bf9a361d99609725483dc1be12d4b"
-  dependencies:
-    "@babel/parser" "^7.15.0"
-    "@babel/types" "^7.15.0"
-    "@vue/shared" "3.2.5"
-    estree-walker "^2.0.2"
-    source-map "^0.6.1"
-
 "@vue/compiler-core@3.2.6":
   version "3.2.6"
   resolved "https://registry.yarnpkg.com/@vue/compiler-core/-/compiler-core-3.2.6.tgz#7162bb0670273f04566af0d353009187ab577915"
@@ -1292,13 +1282,6 @@
     "@vue/shared" "3.2.6"
     estree-walker "^2.0.2"
     source-map "^0.6.1"
-
-"@vue/compiler-dom@3.2.5":
-  version "3.2.5"
-  resolved "https://registry.yarnpkg.com/@vue/compiler-dom/-/compiler-dom-3.2.5.tgz#1ed95468e0d16411950d5764d024de4e10b551dd"
-  dependencies:
-    "@vue/compiler-core" "3.2.5"
-    "@vue/shared" "3.2.5"
 
 "@vue/compiler-dom@3.2.6":
   version "3.2.6"
@@ -1356,11 +1339,11 @@
   version "1.1.2"
   resolved "https://registry.npmjs.org/@vue/preload-webpack-plugin/-/preload-webpack-plugin-1.1.2.tgz"
 
-"@vue/reactivity@3.2.5":
-  version "3.2.5"
-  resolved "https://registry.yarnpkg.com/@vue/reactivity/-/reactivity-3.2.5.tgz#f3d920470f018fdd92250eaac59002f29b624951"
+"@vue/reactivity@3.2.6":
+  version "3.2.6"
+  resolved "https://registry.yarnpkg.com/@vue/reactivity/-/reactivity-3.2.6.tgz#b8993fa6f48545178e588e25a9c9431a1c1b7d50"
   dependencies:
-    "@vue/shared" "3.2.5"
+    "@vue/shared" "3.2.6"
 
 "@vue/ref-transform@3.2.6":
   version "3.2.6"
@@ -1372,24 +1355,20 @@
     estree-walker "^2.0.2"
     magic-string "^0.25.7"
 
-"@vue/runtime-core@3.2.5":
-  version "3.2.5"
-  resolved "https://registry.yarnpkg.com/@vue/runtime-core/-/runtime-core-3.2.5.tgz#a8e4f59474fe8dad51e83241c6c94f5b46ab0780"
+"@vue/runtime-core@3.2.6":
+  version "3.2.6"
+  resolved "https://registry.yarnpkg.com/@vue/runtime-core/-/runtime-core-3.2.6.tgz#376baeef7fe02a62377d46d0d0a8ab9510db1d8e"
   dependencies:
-    "@vue/reactivity" "3.2.5"
-    "@vue/shared" "3.2.5"
+    "@vue/reactivity" "3.2.6"
+    "@vue/shared" "3.2.6"
 
-"@vue/runtime-dom@3.2.5":
-  version "3.2.5"
-  resolved "https://registry.yarnpkg.com/@vue/runtime-dom/-/runtime-dom-3.2.5.tgz#47d5f7a7b5b174974651f34513d414de2075fcfe"
+"@vue/runtime-dom@3.2.6":
+  version "3.2.6"
+  resolved "https://registry.yarnpkg.com/@vue/runtime-dom/-/runtime-dom-3.2.6.tgz#0f74dbca84d56c222fbfbd53415b260386859a3b"
   dependencies:
-    "@vue/runtime-core" "3.2.5"
-    "@vue/shared" "3.2.5"
+    "@vue/runtime-core" "3.2.6"
+    "@vue/shared" "3.2.6"
     csstype "^2.6.8"
-
-"@vue/shared@3.2.5":
-  version "3.2.5"
-  resolved "https://registry.yarnpkg.com/@vue/shared/-/shared-3.2.5.tgz#4d2afd4511af7d8fbf920b779d114f9c9eac6f1f"
 
 "@vue/shared@3.2.6":
   version "3.2.6"
@@ -7299,13 +7278,13 @@ vue-template-es2015-compiler@^1.9.0:
   version "1.9.1"
   resolved "https://registry.npmjs.org/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz"
 
-vue@^3.2.5:
-  version "3.2.5"
-  resolved "https://registry.yarnpkg.com/vue/-/vue-3.2.5.tgz#cb6c633fda7c36017f3a52b9ccdafec0041a98b5"
+vue@^3.2.6:
+  version "3.2.6"
+  resolved "https://registry.yarnpkg.com/vue/-/vue-3.2.6.tgz#c71445078751f458648fd8fb3a2da975507d03d2"
   dependencies:
-    "@vue/compiler-dom" "3.2.5"
-    "@vue/runtime-dom" "3.2.5"
-    "@vue/shared" "3.2.5"
+    "@vue/compiler-dom" "3.2.6"
+    "@vue/runtime-dom" "3.2.6"
+    "@vue/shared" "3.2.6"
 
 watchpack-chokidar2@^2.0.1:
   version "2.0.1"
