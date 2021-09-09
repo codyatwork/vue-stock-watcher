@@ -1273,16 +1273,6 @@
     semver "^6.1.0"
     strip-ansi "^6.0.0"
 
-"@vue/compiler-core@3.2.10":
-  version "3.2.10"
-  resolved "https://registry.yarnpkg.com/@vue/compiler-core/-/compiler-core-3.2.10.tgz#3388b0feac0ec98135f9cf123a2eaae65708b7e8"
-  dependencies:
-    "@babel/parser" "^7.15.0"
-    "@babel/types" "^7.15.0"
-    "@vue/shared" "3.2.10"
-    estree-walker "^2.0.2"
-    source-map "^0.6.1"
-
 "@vue/compiler-core@3.2.11":
   version "3.2.11"
   resolved "https://registry.yarnpkg.com/@vue/compiler-core/-/compiler-core-3.2.11.tgz#10af3777dba303ee7aae668029f131cb90391bee"
@@ -1293,13 +1283,6 @@
     estree-walker "^2.0.2"
     source-map "^0.6.1"
 
-"@vue/compiler-dom@3.2.10":
-  version "3.2.10"
-  resolved "https://registry.yarnpkg.com/@vue/compiler-dom/-/compiler-dom-3.2.10.tgz#1b342e3a7930c99156945e6def27abe671a6a76a"
-  dependencies:
-    "@vue/compiler-core" "3.2.10"
-    "@vue/shared" "3.2.10"
-
 "@vue/compiler-dom@3.2.11":
   version "3.2.11"
   resolved "https://registry.yarnpkg.com/@vue/compiler-dom/-/compiler-dom-3.2.11.tgz#d066f8e1f1812b4e881593819ade0fe6d654c776"
@@ -1307,18 +1290,18 @@
     "@vue/compiler-core" "3.2.11"
     "@vue/shared" "3.2.11"
 
-"@vue/compiler-sfc@^3.2.10":
-  version "3.2.10"
-  resolved "https://registry.yarnpkg.com/@vue/compiler-sfc/-/compiler-sfc-3.2.10.tgz#31372f7fe6554dc5dcfbde3983f4e4a1bf89d6ef"
+"@vue/compiler-sfc@^3.2.11":
+  version "3.2.11"
+  resolved "https://registry.yarnpkg.com/@vue/compiler-sfc/-/compiler-sfc-3.2.11.tgz#628fa12238760d9b9b339ac2e125a759224fadbf"
   dependencies:
     "@babel/parser" "^7.15.0"
     "@babel/types" "^7.15.0"
     "@types/estree" "^0.0.48"
-    "@vue/compiler-core" "3.2.10"
-    "@vue/compiler-dom" "3.2.10"
-    "@vue/compiler-ssr" "3.2.10"
-    "@vue/ref-transform" "3.2.10"
-    "@vue/shared" "3.2.10"
+    "@vue/compiler-core" "3.2.11"
+    "@vue/compiler-dom" "3.2.11"
+    "@vue/compiler-ssr" "3.2.11"
+    "@vue/ref-transform" "3.2.11"
+    "@vue/shared" "3.2.11"
     consolidate "^0.16.0"
     estree-walker "^2.0.2"
     hash-sum "^2.0.0"
@@ -1330,12 +1313,12 @@
     postcss-selector-parser "^6.0.4"
     source-map "^0.6.1"
 
-"@vue/compiler-ssr@3.2.10":
-  version "3.2.10"
-  resolved "https://registry.yarnpkg.com/@vue/compiler-ssr/-/compiler-ssr-3.2.10.tgz#740132e9ef0cf80ca9642b95e488becaa9a6c535"
+"@vue/compiler-ssr@3.2.11":
+  version "3.2.11"
+  resolved "https://registry.yarnpkg.com/@vue/compiler-ssr/-/compiler-ssr-3.2.11.tgz#702cef3429651645bdbe09fe5962803b5a621abb"
   dependencies:
-    "@vue/compiler-dom" "3.2.10"
-    "@vue/shared" "3.2.10"
+    "@vue/compiler-dom" "3.2.11"
+    "@vue/shared" "3.2.11"
 
 "@vue/component-compiler-utils@^3.1.0", "@vue/component-compiler-utils@^3.1.2":
   version "3.2.0"
@@ -1362,13 +1345,13 @@
   dependencies:
     "@vue/shared" "3.2.11"
 
-"@vue/ref-transform@3.2.10":
-  version "3.2.10"
-  resolved "https://registry.yarnpkg.com/@vue/ref-transform/-/ref-transform-3.2.10.tgz#2c35ea5401cbd5f543895f2363488cdaa5b21406"
+"@vue/ref-transform@3.2.11":
+  version "3.2.11"
+  resolved "https://registry.yarnpkg.com/@vue/ref-transform/-/ref-transform-3.2.11.tgz#4d282b9570d1485a73e7bf5d57cce27b4a7aa690"
   dependencies:
     "@babel/parser" "^7.15.0"
-    "@vue/compiler-core" "3.2.10"
-    "@vue/shared" "3.2.10"
+    "@vue/compiler-core" "3.2.11"
+    "@vue/shared" "3.2.11"
     estree-walker "^2.0.2"
     magic-string "^0.25.7"
 
@@ -1386,10 +1369,6 @@
     "@vue/runtime-core" "3.2.11"
     "@vue/shared" "3.2.11"
     csstype "^2.6.8"
-
-"@vue/shared@3.2.10":
-  version "3.2.10"
-  resolved "https://registry.yarnpkg.com/@vue/shared/-/shared-3.2.10.tgz#76ffa503019e52463367e25275656d1d299dc91c"
 
 "@vue/shared@3.2.11":
   version "3.2.11"
