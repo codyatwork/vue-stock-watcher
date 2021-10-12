@@ -14,3 +14,4 @@ jobs:
         username: 'codyatwork'
         reponame: 'Stock-Watcher'
         token: ${{ secrets.GITHUB_TOKEN }}
+        useyarn: true
