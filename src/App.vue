@@ -33,79 +33,76 @@
 <script>
 import StockCard from './components/StockCard.vue'
 
+const availableStocks = {
+  GOOG: {
+    high: 709.28,
+    low: 689.47,
+    name: 'Alphabet Inc. CL C',
+    open: 691,
+    price: 706.32,
+    symbol: 'GOOG'
+  },
+  YHOO: {
+    high: 29.66,
+    low: 29.06,
+    name: 'Yahoo! Inc',
+    open: 29.28,
+    price: 29.27,
+    symbol: 'YHOO'
+  },
+  AIG: {
+    high: 53.47,
+    low: 52.28,
+    name: 'American International Group Inc',
+    open: 52.06,
+    price: 53.08,
+    symbol: 'AIG'
+  },
+  UWTIF: {
+    high: 1.74,
+    low: 1.5,
+    name: 'VelocityShares 3x Long Crude ETN',
+    open: 1.37,
+    price: 1.61,
+    symbol: 'UWTIF'
+  },
+  DWTIF: {
+    high: 297.5,
+    low: 245.59,
+    name: '3x Inverse Crude',
+    open: 307.1,
+    price: 253.41,
+    symbol: 'DWTIF'
+  },
+  GRPN: {
+    high: 4.13,
+    low: 3.6,
+    name: 'Groupon Inc',
+    open: 4.08,
+    price: 3.74,
+    symbol: 'GRPN'
+  },
+}
+
 export default {
   name: 'App',
-
   components: {
     StockCard
   },
-
   data() {
     return {
-      availableStocks: {
-        GOOG: {
-          high: 709.28,
-          low: 689.47,
-          name: 'Alphabet Inc. CL C',
-          open: 691,
-          price: 706.32,
-          symbol: 'GOOG'
-        },
-        YHOO: {
-          high: 29.66,
-          low: 29.06,
-          name: 'Yahoo! Inc',
-          open: 29.28,
-          price: 29.27,
-          symbol: 'YHOO'
-        },
-        AIG: {
-          high: 53.47,
-          low: 52.28,
-          name: 'American International Group Inc',
-          open: 52.06,
-          price: 53.08,
-          symbol: 'AIG'
-        },
-        UWTIF: {
-          high: 1.74,
-          low: 1.5,
-          name: 'VelocityShares 3x Long Crude ETN',
-          open: 1.37,
-          price: 1.61,
-          symbol: 'UWTIF'
-        },
-        DWTIF: {
-          high: 297.5,
-          low: 245.59,
-          name: '3x Inverse Crude',
-          open: 307.1,
-          price: 253.41,
-          symbol: 'DWTIF'
-        },
-        GRPN: {
-          high: 4.13,
-          low: 3.6,
-          name: 'Groupon Inc',
-          open: 4.08,
-          price: 3.74,
-          symbol: 'GRPN'
-        },
-      },
-
       errorMessage: '',
       input: '',
       stocks: [],
     }
   },
-  
   methods: {
     addStock() {
-      if (this.availableStocks[this.input]) {
+      if (availableStocks[this.input]) {
         if (this.stocks.some(stock => stock.symbol === this.input)) {
           this.errorMessage = 'This stock is already on your dashboard.';
         } else {
-          this.stocks.push(this.availableStocks[this.input]);
+          this.stocks.push(availableStocks[this.input]);
           this.errorMessage = '';
           this.input = '';
         }
