@@ -8,7 +8,6 @@
       class="add-input"
       type="text"
       placeholder="Enter stock symbol"
-      autofocus
       :value="input"
       @input="input = $event.target.value.toUpperCase()"
     >
