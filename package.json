@@ -1,5 +1,5 @@
 {
-  "name": "stock-watcher",
+  "name": "vue-stock-watcher",
   "version": "1.0.0",
   "private": true,
   "scripts": {
