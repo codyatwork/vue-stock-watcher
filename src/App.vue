@@ -30,9 +30,10 @@
 </template>
 
 <script>
+import axios from 'axios';
 import StockCard from './components/StockCard.vue'
 
-const availableStocks = {
+/*const availableStocks = {
   GOOG: {
     high: 709.28,
     low: 689.47,
@@ -81,7 +82,7 @@ const availableStocks = {
     price: 3.74,
     symbol: 'GRPN'
   },
-}
+}*/
 
 export default {
   name: 'App',
@@ -97,7 +98,7 @@ export default {
   },
   methods: {
     addStock() {
-      if (availableStocks[this.input]) {
+      /*if (availableStocks[this.input]) {
         if (this.stocks.some(stock => stock.symbol === this.input)) {
           this.errorMessage = 'This stock is already on your dashboard.';
         } else {
@@ -107,7 +108,9 @@ export default {
         }
       } else {
         this.errorMessage = 'Stock not found.';
-      }
+      }*/
+      //is the latest time returned affected by the interval?
+      axios.get(`https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=${this.input}&interval=60min&apikey=HY0JP87WH3PG17X6`).then(response => console.log(response.data['Time Series (60min)']));
     }
   }
 }
