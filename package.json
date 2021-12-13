@@ -10,7 +10,7 @@
   "dependencies": {
     "@babel/core": "^7.16.0",
     "core-js": "^3.19.3",
-    "vue": "^3.2.24"
+    "vue": "^3.2.26"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.16.3",
