@@ -44,7 +44,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.12.16, @babel/core@npm:^7.16.5":
+"@babel/core@npm:7.16.5, @babel/core@npm:^7.12.16":
   version: 7.16.5
   resolution: "@babel/core@npm:7.16.5"
   dependencies:
@@ -67,7 +67,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/eslint-parser@npm:^7.16.5":
+"@babel/eslint-parser@npm:7.16.5":
   version: 7.16.5
   resolution: "@babel/eslint-parser@npm:7.16.5"
   dependencies:
@@ -2037,7 +2037,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/cli-plugin-babel@npm:^5.0.0-rc.1":
+"@vue/cli-plugin-babel@npm:5.0.0-rc.1":
   version: 5.0.0-rc.1
   resolution: "@vue/cli-plugin-babel@npm:5.0.0-rc.1"
   dependencies:
@@ -2053,7 +2053,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/cli-plugin-eslint@npm:^5.0.0-rc.1":
+"@vue/cli-plugin-eslint@npm:5.0.0-rc.1":
   version: 5.0.0-rc.1
   resolution: "@vue/cli-plugin-eslint@npm:5.0.0-rc.1"
   dependencies:
@@ -2089,7 +2089,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/cli-service@npm:^5.0.0-rc.1":
+"@vue/cli-service@npm:5.0.0-rc.1":
   version: 5.0.0-rc.1
   resolution: "@vue/cli-service@npm:5.0.0-rc.1"
   dependencies:
@@ -2216,7 +2216,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/compiler-sfc@npm:3.2.26, @vue/compiler-sfc@npm:^3.2.26":
+"@vue/compiler-sfc@npm:3.2.26":
   version: 3.2.26
   resolution: "@vue/compiler-sfc@npm:3.2.26"
   dependencies:
@@ -3560,7 +3560,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:^3.20.1, core-js@npm:^3.8.3":
+"core-js@npm:3.20.1, core-js@npm:^3.8.3":
   version: 3.20.1
   resolution: "core-js@npm:3.20.1"
   checksum: e45f4f4b5c64d4650d46075b1fa8845c62ea08f5c30ee92ffc14b95147b4a9eb511c8a1184a31d03660061a8570a9610e598e30981afc2d2f8bca460f63dd3cb
@@ -4229,7 +4229,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-formatter-codeframe@npm:^7.32.1":
+"eslint-formatter-codeframe@npm:7.32.1":
   version: 7.32.1
   resolution: "eslint-formatter-codeframe@npm:7.32.1"
   dependencies:
@@ -4239,7 +4239,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-vue@npm:^8.2.0":
+"eslint-plugin-vue@npm:8.2.0":
   version: 8.2.0
   resolution: "eslint-plugin-vue@npm:8.2.0"
   dependencies:
@@ -4324,7 +4324,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^8.5.0":
+"eslint@npm:8.5.0":
   version: 8.5.0
   resolution: "eslint@npm:8.5.0"
   dependencies:
@@ -8780,17 +8780,17 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "vue-stock-watcher@workspace:."
   dependencies:
-    "@babel/core": ^7.16.5
-    "@babel/eslint-parser": ^7.16.5
-    "@vue/cli-plugin-babel": ^5.0.0-rc.1
-    "@vue/cli-plugin-eslint": ^5.0.0-rc.1
-    "@vue/cli-service": ^5.0.0-rc.1
-    "@vue/compiler-sfc": ^3.2.26
-    core-js: ^3.20.1
-    eslint: ^8.5.0
-    eslint-formatter-codeframe: ^7.32.1
-    eslint-plugin-vue: ^8.2.0
-    vue: ^3.2.26
+    "@babel/core": 7.16.5
+    "@babel/eslint-parser": 7.16.5
+    "@vue/cli-plugin-babel": 5.0.0-rc.1
+    "@vue/cli-plugin-eslint": 5.0.0-rc.1
+    "@vue/cli-service": 5.0.0-rc.1
+    "@vue/compiler-sfc": 3.2.26
+    core-js: 3.20.1
+    eslint: 8.5.0
+    eslint-formatter-codeframe: 7.32.1
+    eslint-plugin-vue: 8.2.0
+    vue: 3.2.26
   languageName: unknown
   linkType: soft
 
@@ -8811,7 +8811,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue@npm:^3.2.26":
+"vue@npm:3.2.26":
   version: 3.2.26
   resolution: "vue@npm:3.2.26"
   dependencies:
