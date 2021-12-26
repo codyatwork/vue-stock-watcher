@@ -2,53 +2,79 @@
   <div class="container">
     <div
       class="thermometer"
-      :class="changeIsPositive ? 'positive-thermometer' : 'negative-thermometer'"
+      :class="
+        changeIsPositive ? 'positive-thermometer' : 'negative-thermometer'
+      "
     >
       <div class="line">
         <div
           class="arrow"
           :style="`bottom:calc(${thermometerPercent}% - 6px)`"
-        >
-        </div>
+        ></div>
       </div>
       <div class="numbers">
-        <span>{{displayPrice(high)}}</span>
-        <span>{{displayPrice(low)}}</span>
+        <span>{{ displayPrice(high) }}</span>
+        <span>{{ displayPrice(low) }}</span>
       </div>
     </div>
     <div class="data">
       <div class="naming-info">
-        <h2
-          class="name"
-          :title="name"
-        >
-          {{name}}
-        </h2>
-        <span class="symbol">{{symbol}}</span>
+        <h2 class="name" :title="name">{{ name }}</h2>
+        <span class="symbol">{{ symbol }}</span>
       </div>
       <div class="performance-info">
-        <span class="price">{{displayPrice(price)}}</span>
+        <span class="price">{{ displayPrice(price) }}</span>
         <div class="change">
-          <span :class="changeIsPositive ? 'positive-absolute-change' : 'negative-absolute-change'">
-            <svg v-if="changeIsPositive" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"/></svg>
-            <svg v-else xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/></svg>
-            {{displayPrice(change)}}
+          <span
+            :class="
+              changeIsPositive
+                ? 'positive-absolute-change'
+                : 'negative-absolute-change'
+            "
+          >
+            <svg
+              v-if="changeIsPositive"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+            >
+              <path
+                d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"
+              />
+            </svg>
+            <svg
+              v-else
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+            >
+              <path
+                d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"
+              />
+            </svg>
+            {{ displayPrice(change) }}
           </span>
-          <span :class="changeIsPositive ? 'positive-percent-change' : 'negative-percent-change'"> ({{displayPrice(percentChange)}}%)</span>
+          <span
+            :class="
+              changeIsPositive
+                ? 'positive-percent-change'
+                : 'negative-percent-change'
+            "
+          >
+            ({{ displayPrice(percentChange) }}%)</span
+          >
         </div>
       </div>
       <div class="price-history">
         <div class="price-history-item">
           <span class="price-description">Open</span>
-          {{displayPrice(open)}}
+          {{ displayPrice(open) }}
         </div>
         <div class="price-history-item">
           <span class="price-description">High</span>
-          {{displayPrice(high)}}
+          {{ displayPrice(high) }}
         </div>
         <div class="price-history-item">
           <span class="price-description">Low</span>
-          {{displayPrice(low)}}
+          {{ displayPrice(low) }}
         </div>
       </div>
     </div>
@@ -59,23 +85,23 @@
 let priceDefinition = {
   type: Number,
   required: true,
-  validator: value => value >= 0
+  validator: (value) => value >= 0,
 };
 let stringDefinition = {
   type: String,
   required: true,
-  validator: value => value.length > 0
-}
+  validator: (value) => value.length > 0,
+};
 
 export default {
-  name: 'StockCard',
+  name: "StockCard",
   props: {
     high: priceDefinition,
     low: priceDefinition,
     name: stringDefinition,
     open: priceDefinition,
     price: priceDefinition,
-    symbol: stringDefinition
+    symbol: stringDefinition,
   },
   computed: {
     change() {
@@ -90,20 +116,20 @@ export default {
         if (this.change < 0) return -100;
         return 0;
       }
-      return this.change / this.open * 100;
+      return (this.change / this.open) * 100;
     },
     thermometerPercent() {
       let range = this.high - this.low;
       if (range === 0) return 50;
-      return (this.price - this.low) / range * 100;
-    }
+      return ((this.price - this.low) / range) * 100;
+    },
   },
   methods: {
     displayPrice(price) {
       return price.toFixed(2);
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -159,7 +185,7 @@ export default {
   font-size: 12px;
   font-weight: 600;
   justify-content: space-between;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
   width: 6ch;
 }
 
@@ -232,7 +258,7 @@ svg {
   font-size: 12px;
   font-weight: 600;
   grid-template-columns: repeat(auto-fit, 5rem);
-  row-gap: .1rem;
+  row-gap: 0.1rem;
   text-transform: uppercase;
 }
 
@@ -268,7 +294,7 @@ svg {
   }
 
   .change {
-    margin-left: .5rem;
+    margin-left: 0.5rem;
   }
 
   .price-history {
