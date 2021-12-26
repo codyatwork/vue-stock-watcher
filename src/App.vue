@@ -110,22 +110,26 @@ export default {
 </script>
 
 <style>
+:root {
+  --background: #fafafa;
+  --button: #284cc9;
+  --caption: #919aa0;
+  --green: #299e00;
+  --green-dark: #00a333;
+  --green-light: #6af531;
+  --red: #bb0606;
+  --red-dark: #901700;
+  --red-light: #eb5631;
+  --titles: #98a1a8;
+  --type: #3e5769;
+}
+
 body {
-  background: #fafafa;
+  background: var(--background);
   margin: 0;
 }
 
 #app {
-  --green: #299e00;
-  --green-light: #6af531;
-  --green-dark: #00a333;
-  --red: #bb0606;
-  --red-light: #eb5631;
-  --red-dark: #901700;
-  --button: #284cc9;
-  --titles: #98a1a8;
-  --caption: #919aa0;
-  --type: #3e5769;
   font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -133,6 +137,17 @@ body {
   margin: auto;
   max-width: 1250px;
   padding: 0 0.75rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --titles: #d1dde7;
+    background: var(--type);
+  }
+
+  #app {
+    color: var(--background);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -191,6 +206,20 @@ body {
 
 .stock {
   margin-bottom: 0.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .add-input {
+    color: var(--background);
+  }
+
+  .add-input::placeholder {
+    color: #b7c3ca;
+  }
+
+  .error-message {
+    color: var(--red-light);
+  }
 }
 
 @media screen and (min-width: 768px) {
