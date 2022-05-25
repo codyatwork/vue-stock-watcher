@@ -11,28 +11,37 @@ I have also made a [Svelte version of this app](https://github.com/codyatwork/sv
 * DWTIF
 * GRPN
 
-## Project setup
-```
-yarn install
+## Recommended IDE Setup
+
+[VSCode](https://code.visualstudio.com) + [Volar](https://marketplace.visualstudio.com/items?itemName=vue.volar) (and disable Vetur).
+
+## Customize configuration
+
+See [Vite Configuration Reference](https://vitejs.dev/config/).
+
+## Project Setup
+
+```sh
+npm install
 ```
 
-### Compiles and hot-reloads for development
-```
-yarn serve
+### Compile and Hot-Reload for Development
+
+```sh
+npm run dev
 ```
 
-### Compiles and minifies for production
-```
-yarn build
+### Compile and Minify for Production
+
+```sh
+npm run build
 ```
 
-### Lints and fixes files
-```
-yarn lint
-```
+### Lint with [ESLint](https://eslint.org/)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+```sh
+npm run lint
+```
 
 ## Questions I would have liked to ask a designer
 * Is the mobile view of the stock supposed to be a clean division between the left and right side, or is each corner of the box independent? How is the maximum length of the stock names determined?

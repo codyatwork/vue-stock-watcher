@@ -110,41 +110,15 @@ export default {
 </script>
 
 <style>
-:root {
-  --background: #fafafa;
-  --button: #284cc9;
-  --caption: #919aa0;
-  --green: #299e00;
-  --green-dark: #00a333;
-  --green-light: #6af531;
-  --red: #bb0606;
-  --red-dark: #901700;
-  --red-light: #eb5631;
-  --titles: #98a1a8;
-  --type: #3e5769;
-}
-
-body {
-  background: var(--background);
-  margin: 0;
-}
+@import "./assets/base.css";
 
 #app {
-  font-family: "Open Sans", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: var(--type);
   margin: auto;
   max-width: 1250px;
   padding: 0 0.75rem;
 }
 
 @media (prefers-color-scheme: dark) {
-  body {
-    --titles: #d1dde7;
-    background: var(--type);
-  }
-
   #app {
     color: var(--background);
   }
@@ -160,6 +134,7 @@ body {
 <style scoped>
 .heading {
   font-weight: 600;
+  margin: revert;
 }
 
 .add-input-group {
@@ -193,10 +168,12 @@ body {
 
 .verbose-button-text {
   display: none;
+  font-weight: inherit;
 }
 
 .error-message {
   color: var(--red);
+  margin: revert;
 }
 
 .stocks {

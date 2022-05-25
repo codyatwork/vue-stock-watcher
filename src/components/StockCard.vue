@@ -64,15 +64,15 @@
         </div>
       </div>
       <div class="price-history">
-        <div class="price-history-item">
+        <div>
           <span class="price-description">Open</span>
           {{ displayPrice(open) }}
         </div>
-        <div class="price-history-item">
+        <div>
           <span class="price-description">High</span>
           {{ displayPrice(high) }}
         </div>
-        <div class="price-history-item">
+        <div>
           <span class="price-description">Low</span>
           {{ displayPrice(low) }}
         </div>
@@ -183,10 +183,13 @@ export default {
   display: flex;
   flex-direction: column;
   font-size: 12px;
-  font-weight: 600;
   justify-content: space-between;
   margin-left: 0.5rem;
   width: 6ch;
+}
+
+.numbers * {
+  font-weight: 600;
 }
 
 .data {
@@ -203,6 +206,7 @@ export default {
 
 .name {
   font-size: 16px;
+  font-weight: bold;
   margin: 0;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -228,8 +232,11 @@ export default {
 
 .change {
   font-size: 14px;
-  font-weight: 600;
   white-space: nowrap;
+}
+
+.change * {
+  font-weight: 600;
 }
 
 .positive-absolute-change {
@@ -260,6 +267,10 @@ svg {
   grid-template-columns: repeat(auto-fit, 5rem);
   row-gap: 0.1rem;
   text-transform: uppercase;
+}
+
+.price-history * {
+  font-weight: inherit;
 }
 
 .price-description {

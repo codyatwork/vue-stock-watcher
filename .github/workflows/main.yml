@@ -14,4 +14,3 @@ jobs:
         username: 'codyatwork'
         reponame: 'vue-stock-watcher'
         token: ${{ secrets.GITHUB_TOKEN }}
-        useyarn: true
