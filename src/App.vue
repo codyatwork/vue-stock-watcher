@@ -12,10 +12,10 @@
       Add<span class="verbose-button-text"> Stock</span>
     </button>
   </form>
-  <p v-if="error === 'duplicate'" class="error-message">
+  <p v-if="error === errors.duplicate" class="error-message">
     This stock is already on your dashboard.
   </p>
-  <p v-else-if="error === 'notFound'" class="error-message">
+  <p v-else-if="error === errors.notFound" class="error-message">
     Stock not found (they're hardcoded -
     <a
       href="https://github.com/codyatwork/vue-stock-watcher#the-stocks-are-hard-coded-here-are-the-ones-included"
@@ -97,6 +97,7 @@ export default {
   data() {
     return {
       error: null,
+      errors: { duplicate: "duplicate", notFound: "notFound" },
       input: "",
       stocks: [],
     };
@@ -105,14 +106,14 @@ export default {
     addStock() {
       if (availableStocks[this.input]) {
         if (this.stocks.some((stock) => stock.symbol === this.input)) {
-          this.error = "duplicate";
+          this.error = this.errors.duplicate;
         } else {
           this.stocks.push(availableStocks[this.input]);
           this.error = null;
           this.input = "";
         }
       } else {
-        this.error = "notFound";
+        this.error = this.errors.notFound;
       }
     },
   },
