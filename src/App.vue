@@ -159,7 +159,7 @@ export default {
   border: 1px solid #e1e2e4;
   flex: 1;
   font-family: inherit;
-  font-size: 16px;
+  font-size: 1rem;
   padding: 1rem;
 }
 
@@ -212,7 +212,7 @@ export default {
 
 @media screen and (min-width: 768px) {
   .heading {
-    font-size: 60px;
+    font-size: 3.75rem;
   }
 
   .add-input-group {

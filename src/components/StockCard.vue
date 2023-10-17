@@ -182,7 +182,7 @@ export default {
 .numbers {
   display: flex;
   flex-direction: column;
-  font-size: 12px;
+  font-size: 0.75rem;
   justify-content: space-between;
   margin-left: 0.5rem;
   width: 6ch;
@@ -205,7 +205,7 @@ export default {
 }
 
 .name {
-  font-size: 16px;
+  font-size: 0.875rem;
   font-weight: bold;
   margin: 0;
   overflow: hidden;
@@ -216,7 +216,7 @@ export default {
 
 .symbol {
   color: var(--titles);
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600;
 }
 
@@ -227,11 +227,11 @@ export default {
 }
 
 .price {
-  font-size: 22px;
+  font-size: 1.375rem;
 }
 
 .change {
-  font-size: 14px;
+  font-size: 0.875rem;
   white-space: nowrap;
 }
 
@@ -262,7 +262,7 @@ svg {
 
 .price-history {
   display: none;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 600;
   grid-template-columns: repeat(auto-fit, 5rem);
   row-gap: 0.1rem;
@@ -314,7 +314,7 @@ svg {
   }
 
   .name {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   .performance-info {
@@ -323,7 +323,7 @@ svg {
   }
 
   .price {
-    font-size: 28px;
+    font-size: 1.75rem;
   }
 
   .change {
